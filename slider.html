@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slider</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.slider {width: 100vw;
+			height: 100vh;
+ 
+			overflow: hidden;
+		}
+		.slider .slider-box {
+			position: relative;
+			width: 500%;
+			height: 100%;
+			margin: 0;
+			left: 0;
+			animation: 20s slider infinite;
+		}
+		.slider .slider-box img {
+			float: left;
+			width: 20%;
+			height: 100%;
+			/*overflow:  hidden;*/
+		}
+		@keyframes slider {
+			0% {
+				left: 0%;
+			}
+			20% {
+				left:  0%;
+			}
+			25% {
+				left: -100%;
+			}
+			45% {
+				left: -100%;
+			}
+			50% {
+				left: -200%;
+			}
+			70% {
+				left: -200%;
+			}
+			75% {
+				left: -300%;
+			}
+			95% {
+				left: -300%;
+			}
+			100% {
+				left: -400%;
+			}
+		}
+		
+
+	</style>
+</head>
+<body>
+<div class="slider">
+	<div class="slider-box">
+		<img src="images/college.jpg" alt="">
+		<img src="images/teacher.jpg" alt="">
+		<img src="images/students.jpg" alt="">
+		<img src="images/library.jpg" alt="">
+		<img src="images/college.jpg" alt="">
+		
+	</div>
+	
+</div>
+
+
+</body>
+</html>
